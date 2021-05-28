@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+<link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+
+  
+  <title>FindAppCo API</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FindAppCo API</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#docs">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#addlisting">Add Listing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="mobilewrap">
+  <div class="card border-secondary mb-3" id="about" style="max-width: 20rem;">
+    <div class="card-header">API :: About</div>
+    <div class="card-body">
+      <h4 class="card-title">Welcome</h4>
+      <p class="card-text">Welcome to the FindApp API. This API serves the FindApp ecosystem.</p>
+      <p class="card-text">This API allows community use of the FindAppCo database listings sorted by their signature tags.</p>
+      <p class="card-text">Developers will be able to retrieve all listings and 
+      their community-generated tags for project use.</p>
+<p class="card-text"><b>NOTE :</b> current API listings are wellness industry pages available from our WellFind listing app. The FindApp ecosytem will soon expand
+to allow for business listings of every variety, giving the community the ability to truly synchronize their values, needs, and patronage.
+</p>    
+</div>
+  </div>
+
+  <div class="card border-success mb-3" id="docs" style="max-width: 20rem;">
+    <div class="card-header">Docs</div>
+    <div class="card-body">
+      <h4 class="card-title">API: Retrieve All Current Listings</h4>
+      <p class="card-text">GET:</p>
+              <p class="card-text">https://wellfindapi.herokuapp.com/api/listings/read.php</p>
+              <a href="https://wellfindapi.herokuapp.com/api/listings/search_match.php?search=%vegan%"  target="_blank" class=''>See Sample Output <i class="fas fa-external-link-alt"></i></a>
+              <p>See the Tag Search tab to use this API with a filter query</p> 
+              <h4 class="card-title">API: Retrieve Listings By Tag Search</h4> 
+              <p class="card-text">GET:</p>
+  <p class="card-text">https://wellfindapi.herokuapp.com/api/listings/search.php?search=%TAG%</p>
+  <br>
+      <p>Query Params <br>(please include %-%): </p><p> search | %TAG%</p> 
+            </div>
+  </div>
+  <div class="card border-light mb-3" id="addlisting" style="max-width: 20rem;">
+    <div class="card-header">Add Listings</div>
+    <div class="card-body">
+      <h4 class="card-title">How to Add To Our Database</h4>
+      <p class="card-text">Listings and Tags can currently be 
+        added to the WellFind database using the form (LINK) 
+        on the WF site or the tag adding tool on individual 
+        listing pages.</p>
+    </div>
+  </div>
+  <div class="card border-dark mb-3" id="contact" style="max-width: 20rem;">
+    <div class="card-header">Contact</div>
+    <div class="card-body">
+      <h4 class="card-title">Contact the FindAppCo:</h4>
+      <p class="card-text"><br>FindAppCo@gmail.com<br>Contact Founder: thelmaijemma@gmail.com</p>
+    </div>
+  </div>
+  </div>
+</body>
+
+  
+</body>
+</html>

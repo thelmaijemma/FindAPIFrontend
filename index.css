@@ -1,0 +1,14 @@
+body{
+    background: rgb(98,129,197);
+    background: linear-gradient(90deg, rgba(98,129,197,1) 0%, rgba(31,35,62,1) 73%); 
+}
+
+.mobilewrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 3rem;
+}
